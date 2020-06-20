@@ -21,7 +21,9 @@ h1 {
 }
 
 .container {
-  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 a {
@@ -39,7 +41,9 @@ a {
 }
 
 .show-container {
-  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
 .form-container {
@@ -55,4 +59,17 @@ a {
 .submit-link {
   display: flex;
   justify-content: space-between;
+}
+
+.links-edit {
+  display:flex
+}
+
+.links-edit h3 {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+  padding: 4px 18px;
+  border-radius: 4px;
+  margin: 4px 20px;
 }

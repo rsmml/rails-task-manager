@@ -4,7 +4,9 @@
   <h3 class="details"><%= @task.details %></h3>
   <% is_completed = @task.completed == true ? '' : 'not' %>
   <h3 class="completed">This task is <%= "#{is_completed}" %> completed</h3>
-  <h3 class=""><%= link_to 'Back to list', tasks_path %></h3>
-  <h3 class=""><%= link_to 'Edit', edit_task_path %></h3>
-  <h3 class=""><%= link_to 'Delete', task_path(@task), method: :delete, data: { confirm: 'Are you sure?'} %></h3>
+  <div class="links-edit">
+    <h3 class=""><%= link_to '<i class="fa fa-arrow-left"></i>'.html_safe, tasks_path %></h3>
+    <h3 class=""><%= link_to '<i class="fa fa-edit"></i>'.html_safe, edit_task_path %></h3>
+    <h3 class=""><%= link_to '<i class="fa fa-trash"></i>'.html_safe, task_path(@task), method: :delete, data: { confirm: 'Are you sure?'} %></h3>
+  </div>
 </div>

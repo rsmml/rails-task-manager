@@ -1,13 +1,15 @@
 <div class="container">
   <h1>All my Tasks</h1>
   <p class=""><strong>+</strong> <%= link_to 'Create a new Task', new_task_path %></p>
+  <div class="all-tasks">
+    <% @tasks.each do |task| %>
+      <div class="checkbox">
+        <%= check_box_tag :completed, task.completed, task.completed %>
+        <h3><%= link_to task.title, task_path(task) %></h3>
+      </div>
+    <% end %>
+  </div>
 
-  <% @tasks.each do |task| %>
-    <div class="checkbox">
-      <%= check_box_tag :completed, task.completed, task.completed %>
-      <h3><%= link_to task.title, task_path(task) %></h3>
-    </div>
-  <% end %>
 
 </div>
 
