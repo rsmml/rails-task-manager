@@ -3,5 +3,9 @@ Rails.application.routes.draw do
   # CRUD ACTIONS
   # Read ALL my Tasks
   get 'tasks', to: 'tasks#index'
+  # Read One Task
   get 'tasks/:id', to: 'tasks#show', as: :task
+  # Create a New Task
+  get '/tasks/new', to: 'tasks#new'
+  post '/tasks', to: 'tasls#create'
 end
