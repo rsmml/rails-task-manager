@@ -1,1 +1,39 @@
 @import 'bootstrap/scss/bootstrap';
+
+body {
+  font-family: 'Helvetica';
+}
+.checkbox {
+ display: flex;
+ margin-bottom: 12px;
+}
+
+h1 {
+  color: rgba(0,0,0,0.7);
+}
+.checkbox h3 {
+  margin: 0;
+  margin-left: 12px;
+}
+
+.container {
+  margin-left: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.details {
+  width: 30%;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  padding: 24px 12px;
+  color: rgba(0,0,0,0.8);
+}
+
+.show-container {
+  margin-left: 12px;
+}
