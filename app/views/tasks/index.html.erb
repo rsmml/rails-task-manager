@@ -1,6 +1,6 @@
 <div class="container">
   <h1>All my Tasks</h1>
-  <p class=""><%= link_to 'Create a new Task', new_task_path %></p>
+  <p class=""><strong>+</strong> <%= link_to 'Create a new Task', new_task_path %></p>
 
   <% @tasks.each do |task| %>
     <div class="checkbox">
