@@ -1,6 +1,11 @@
-<h1>All my Tasks</h1>
+<div class="container">
+  <h1>All my Tasks</h1>
 
-<% @tasks.each do |task| %>
-  <h5><%= task.title %>: <%= task.details %></h5>
-  <p>Status: <%= task.completed %></p>
-<% end %>
+  <% @tasks.each do |task| %>
+    <div class="checkbox">
+      <%= check_box_tag task.id, task.completed %>
+      <h3><%= task.title %></h3>
+    </div>
+  <% end %>
+</div>
+
