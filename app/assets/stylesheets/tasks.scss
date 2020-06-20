@@ -20,3 +20,21 @@ h1 {
 .container {
   margin-left: 12px;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+.details {
+  width: 30%;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  padding: 24px 12px;
+  color: rgba(0,0,0,0.8);
+}
+
+.show-container {
+  margin-left: 12px;
+}
