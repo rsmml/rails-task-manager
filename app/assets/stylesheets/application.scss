@@ -37,3 +37,18 @@ a {
 .show-container {
   margin-left: 12px;
 }
+
+.form-container {
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%
+}
+
+.form-container submit {
+  margin: 12px auto;
+}
+
+.submit-link {
+  display: flex;
+  justify-content: space-between;
+}
