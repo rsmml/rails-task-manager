@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   # CRUD ACTIONS
   # Read ALL my Tasks
   get 'tasks', to: 'tasks#index'
+  get 'tasks/:id', to: 'tasks#show', as: :task
 end
